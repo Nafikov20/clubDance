@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/clubDance/static/css/main.6d393668.css",
+    "main.js": "/clubDance/static/js/main.c87e241c.js",
+    "index.html": "/clubDance/index.html",
+    "main.6d393668.css.map": "/clubDance/static/css/main.6d393668.css.map",
+    "main.c87e241c.js.map": "/clubDance/static/js/main.c87e241c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d393668.css",
+    "static/js/main.c87e241c.js"
+  ]
+}
