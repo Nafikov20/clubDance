@@ -1,12 +1,12 @@
-import { IMusicState,  musicReducer } from "./musicReducer";
-import { IPersonState, personsReducer } from "./personsReducer";
+import { iMusicState,  musicReducer } from "./music-reducer";
+import { iPersonState, personsReducer } from "./persons-reducer";
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
 
-export interface IRootState {
-    music: IMusicState,
-    persons: IPersonState,
-} 
+export interface iRootState {
+    music: iMusicState,
+    persons: iPersonState,
+}
 
 const rootReducer = combineReducers({
     music: musicReducer,

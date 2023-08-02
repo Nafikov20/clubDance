@@ -1,50 +1,42 @@
 [
   {
       "id": 1,
-      "name": "Petr Ivanov",
-      "sex": "male",
-      "skills": ["pop", "house"]
+      "name": "Глеб Макаров",
+      "skills": ["hiphop", "house"]
   },
   {
       "id": 2,
-      "name": "Anna Valova",
-      "sex": "female",
+      "name": "Полина Щетинина",
       "skills": ["house"]
   },
   {
       "id": 3,
-      "name": "Anna Valova",
-      "sex": "male",
-      "skills": ["hiphop", "house"]
+      "name": "Иван Иванов",
+      "skills": ["pop", "house"]
   },
   {
       "id": 4,
-      "name": "Valentina Shevchenko",
-      "sex": "female",
-      "skills": ["house", "hiphop"]
-  },
-  {
-      "id": 5,
-      "name": "Felix Drozhanov",
-      "sex": "male",
+      "name": "Юлия Федорова",
       "skills": ["hiphop", "pop"]
   },
   {
+      "id": 5,
+      "name": "Петр Ян",
+      "skills": ["house", "hiphop"]
+  },
+  {
       "id": 6,
-      "name": "Fedor Tolstoy",
-      "sex": "male",
-      "skills": ["hiphop"]
+      "name": "Алексей Федоров",
+      "skills": ["pop"]
   },
   {
       "id": 7,
-      "name": "Zalima Haroeva",
-      "sex": "female",
+      "name": "Настя Стрелкова",
       "skills": ["hiphop", "house", "pop"]
   },
   {
-    "id": 8,
-    "name": "Kamilla Karenina",
-    "sex": "female",
-    "skills": ["pop"]
+      "id": 8,
+      "name": "Марина Шевченко",
+      "skills": ["r&b"]
   }
 ]

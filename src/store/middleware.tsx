@@ -1,26 +1,26 @@
-import { ITrack } from "./musicReducer";
-import { IPerson } from "./personsReducer";
+import { iTrack } from "./music-reducer";
+import { iPerson } from "./persons-reducer";
 import { ThunkAction } from "redux-thunk";
 import songsJSON from '../data/songs.json';
 import personsJSON from '../data/persons.json';
-import { setPersons, setTracks, TSetPersonsAction, TSetTracksAction } from "./actions";
-import { IRootState } from ".";
+import { setPersons, setTracks, tSetPersonsAction, tSetTracksAction } from "./actions";
+import { iRootState } from ".";
 
-// simulate async call to the server
-export function fetchPersons(): ThunkAction<void, IRootState, unknown, TSetPersonsAction> {
+
+export function fetchPersons(): ThunkAction<void, iRootState, unknown, tSetPersonsAction> {
     return function(dispatch){
         Promise.resolve(personsJSON)
-        .then((persons: IPerson[]) => {
+        .then((persons: iPerson[]) => {
             dispatch(setPersons(persons))
         })
     }
 }
 
-// simulate async call to the server
-export function fetchTracks(): ThunkAction<void, IRootState, unknown, TSetTracksAction> {
+
+export function fetchTracks(): ThunkAction<void, iRootState, unknown, tSetTracksAction> {
     return function(dispatch){
         return Promise.resolve(songsJSON)
-        .then((tracks: ITrack[]) => {
+        .then((tracks: iTrack[]) => {
             dispatch(setTracks(tracks))
         })
     }

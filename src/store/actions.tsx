@@ -1,20 +1,20 @@
-import { ITrack, SET_CURRENT_TRACK, SET_TRACKS } from "./musicReducer";
-import { IPerson, SET_PERSONS } from "./personsReducer";
+import { iTrack, SET_CURRENT_TRACK, SET_TRACKS } from "./music-reducer";
+import { iPerson, SET_PERSONS } from "./persons-reducer";
 
-export type TSetPersonsAction = {
+export type tSetPersonsAction = {
     type: string,
-    payload: IPerson[]
+    payload: iPerson[]
 }
 
-export type TSetTracksAction = {
+export type tSetTracksAction = {
     type: 'SET_TRACKS',
-    payload: ITrack[]
+    payload: iTrack[]
 }
-export type TSetCurrentTrackAction = {
-    type: 'SET_CURRENT_TRACK',
-    payload: ITrack
+export type tSetCurrentTrackAction = {
+    type: 'SET_CURRENT_TRACK'
+    payload: iTrack
 }
-export type TMusicActions = TSetTracksAction | TSetCurrentTrackAction;
-export const setTracks = (payload: ITrack[]): TSetTracksAction => ({type: SET_TRACKS, payload: payload});
-export const setCurrentTrackAction = (payload: ITrack): TSetCurrentTrackAction => ({type: SET_CURRENT_TRACK, payload: payload});
-export const setPersons = (payload: IPerson[]) => ({type: SET_PERSONS, payload: payload});
+export type tMusicActions = tSetTracksAction | tSetCurrentTrackAction;
+export const setTracks = (payload: iTrack[]): tSetTracksAction => ({type: SET_TRACKS, payload: payload});
+export const setCurrentTrackAction = (payload: iTrack): tSetCurrentTrackAction => ({type: SET_CURRENT_TRACK, payload: payload});
+export const setPersons = (payload: iPerson[]) => ({type: SET_PERSONS, payload: payload});

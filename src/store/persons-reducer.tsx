@@ -1,25 +1,24 @@
-export interface IPerson {
+export interface iPerson {
     id: number,
     name: string,
-    sex: string,
-    skills: string[]
+    skills: string[],
 }
 
-export interface IPersonState {
-    persons: IPerson[]
+export interface iPersonState {
+    persons: iPerson[]
 }
 
-const defaultState: IPersonState = {
+const defaultState: iPersonState = {
     persons: []
 };
 
 export const SET_PERSONS = 'SET_PERSONS';
 
-export const personsReducer = (state = defaultState, action: { type: string; payload: IPerson[]; }) => {
+export const personsReducer = (state = defaultState, action: { type: string; payload: iPerson[]; }) => {
     switch(action.type) {
-        case SET_PERSONS: 
+        case SET_PERSONS:
             return {persons: [...action.payload]};
-        default: 
+        default:
             return state;
     }
 };

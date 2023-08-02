@@ -1,8 +1,8 @@
-import { IRootState } from ".";
-import { ITrack } from "./musicReducer";
+import { iRootState } from ".";
+import { iTrack } from "./music-reducer";
 
-export const persons = (state: IRootState) => state.persons.persons;
-export const tracks = (state: IRootState) => state.music.tracks;
-export const currentTrack = (state: IRootState) => state.music.currentTrack;
+export const persons = (state: iRootState) => state.persons.persons;
+export const tracks = (state: iRootState) => state.music.tracks;
+export const currentTrack = (state: iRootState) => state.music.currentTrack;
 // equality function for useselector, to prevent needless render
-export const isEqualTrack = (prevTrack: ITrack, nextTrack: ITrack): boolean => prevTrack.id === nextTrack.id;
+export const isEqualTrack = (prevTrack: iTrack, nextTrack: iTrack): boolean => prevTrack.id === nextTrack.id;

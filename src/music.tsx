@@ -1,9 +1,9 @@
-import { store } from '../store';
-import { setCurrentTrackAction } from '../store/actions';
-import { ITrack } from '../store/musicReducer';
+import { store } from '../src/store';
+import { setCurrentTrackAction } from '../src/store/actions';
+import { iTrack } from '../src/store/music-reducer';
 
-class QueueMusic {
-  private _queue: ITrack[];
+class Music {
+  private _queue: iTrack[];
   private _indexCurrentTrack: number;
 
   constructor() {
@@ -11,7 +11,7 @@ class QueueMusic {
     this._indexCurrentTrack = 0;
   }
 
-  init(tracks: ITrack[]) {
+  init(tracks: iTrack[]) {
     if (tracks.length === 0) {
       return;
     }
@@ -37,4 +37,4 @@ class QueueMusic {
   }
 }
 
-export const queue = new QueueMusic();
+export const music = new Music();
