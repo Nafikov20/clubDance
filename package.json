@@ -6,6 +6,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "test:all": "yarn tsc --noEmit && yarn test:eslint && yarn test:stylelint",
     "test:all:fix": "yarn tsc --noEmit && yarn test:eslint:fix && yarn test:prettier && yarn test:stylelint:fix",
